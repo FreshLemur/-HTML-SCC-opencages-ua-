@@ -1,0 +1,111 @@
+body {
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    justify-content: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: relative;
+}
+
+.header-div {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+}
+
+.header-logo {
+    display: flex;
+    align-content: center;
+    margin-left: 10px;
+    flex-grow: 1; /* Збільшення гнучкості логотипу */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Переносимо навігацію вправо */
+    flex-grow: 1; /* Збільшення гнучкості навігації */
+}
+
+.nav-ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center; /* Розміщення li в центрі горизонтально */
+    font-size: 23px;
+    color: white;
+    transition: all .25s ease;
+    margin: auto;
+}
+
+.nav-li {
+    padding-right: 35px;
+}
+
+.nav-li-a {
+    transition: all .25s ease;
+}
+
+.nav-li-a:hover {
+    color: #007bff;
+}
+
+
+.nav-search {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin-left: auto; /* Розміщення form зліва */
+    border-radius: 5px;
+    padding-right: 50px;
+}
+
+.nav-search input[type="text"] {
+    font-size: 20px;
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.nav-search input[type="submit"] {
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.nav-search input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.main-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/pexels-public-domain-pictures-53545.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
